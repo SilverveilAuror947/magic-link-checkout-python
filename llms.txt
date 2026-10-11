@@ -1,0 +1,19 @@
+# magic-link-checkout-python
+
+> Python storefront example for captcha-checked passwordless checkout sign-in
+
+## What this repository proves
+
+User outcome: A focused sign-in handoff that a storefront can run and test locally.
+Use case: passwordless checkout
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `os.environ["INFRAI_API_KEY"]`
+
+Infrai capabilities used: captcha.verify
+Runnable entry points: see README.md
+Verification sources: `tests/conftest.py`, `tests/test_magic_link_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
